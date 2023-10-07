@@ -1,0 +1,94 @@
+<% include ./Partials/header.ejs %>
+
+<div class="main" style="padding-bottom: 10vh">
+  <div class="blogbody">
+    <div class="top-content">
+      <div class="topic">Technology</div>
+      <div class="headline">
+        Will Artificial Intelligence(AI) Replace Web Developers in 2024? Web Developers Are In Danger?
+      </div>
+      <div class="blog-sum">
+        <p>
+          Blockchain is a distributed ledger technology that allows for secure,
+          transparent, and tamper-proof transactions. It is best known for its
+          role in powering cryptocurrencies, but blockchain has the potential to
+          revolutionize many other industries as well
+        </p>
+      </div>
+    </div>
+
+    <div class="first-image">
+      <img
+        src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        alt=""
+      />
+    </div>
+
+    <div class="blog-text">
+      <div class="first-para">
+        <p class="select-para">
+          <i style="font-size: 2vw" class="part">What Actially AI is?</i> <br />
+          <br />
+          Artificial Intelligence (AI) is a field of computer science dedicated
+          to creating systems that mimic human intelligence. It encompasses
+          machine learning, deep learning, and natural language processing.
+          Narrow AI, like virtual assistants and recommendation algorithms,
+          excels in specific tasks. The ultimate goal is to achieve General AI,
+          which would possess human-like intelligence. AI's applications are
+          diverse, including autonomous vehicles, medical diagnosis, and
+          financial analysis. Ethical considerations, privacy concerns, and
+          responsible AI development are vital aspects of AI's ongoing
+          evolution, shaping its impact on society, the economy, and everyday
+          life.
+        </p>
+      </div>
+
+      <div class="second-para">
+        <p class="select-para">
+          <i style="font-size: 2vw" class="part">Will Artificial Intelligence(AI) Replace Web Developers?</i> <br />
+          <br />
+           <i style="font-size: 1.5vw" class="asspart">AI is unlikely to completely replace web developers in the foreseeable future.</i><br/> 
+          While AI and automation can assist web developers by automating repetitive tasks, enhancing productivity, and aiding in code optimization, several crucial aspects of web development require human expertise and creativity. <br><br>
+
+          &#8226; <i style="font-size: 1.5vw" class="part">Design and User Experience (UX):</i><br>
+           Designing visually appealing and user-friendly websites requires creative thinking and an understanding of user behavior. AI can assist in generating design suggestions, but it lacks the artistic sensibility and empathy needed to create a truly exceptional user experience. <br><br>
+          
+           &#8226; <i style="font-size: 1.5vw" class="part">Complex Problem-Solving: </i> <br>
+          Web development often involves solving unique and complex problems, such as optimizing website performance, security, and scalability. These challenges require human problem-solving skills, adaptability, and decision-making. <br><br>
+          
+          &#8226; <i style="font-size: 1.5vw" class="part">Client Communication: </i><br>
+          Web developers frequently interact with clients to understand their requirements, provide updates, and address concerns. Effective communication and collaboration are human skills that AI cannot replicate. <br><br>
+          
+          &#8226; <i style="font-size: 1.5vw" class="part">Adaptation to New Technologies: </i><br>
+          The web development landscape evolves rapidly with new technologies and frameworks. Web developers need to continually update their skills and adapt to these changes, which requires human learning and decision-making. <br><br>
+          
+          &#8226; <i style="font-size: 1.5vw" class="part">Creativity:</i><br>
+           Creating innovative and unique web solutions often involves a level of creativity and artistic expression that AI currently lacks. <br><br>
+        </p>
+      </div>
+
+      <div class="third-para">
+        <p class="select-para">
+          <i style="font-size: 2vw" class="part">Conclusion</i>
+          <br />
+          <br />
+          While AI can automate some routine coding tasks and help streamline web development processes, web developers will continue to play a crucial role in designing, developing, and maintaining websites, as well as ensuring they meet the specific needs and goals of clients and users. AI is more likely to be a valuable tool that complements the work of web developers rather than replacing them entirely.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var navigationBar = document.querySelector(".nav-bar");
+
+  window.addEventListener("wheel", (event) => {
+    if (event.wheelDeltaY === -120) {
+      navigationBar.style.top = "-10vh";
+    } else {
+      navigationBar.style.top = "0vh";
+    }
+  });
+</script>
+<% include ./partials/bottom.ejs %>
+<script src="/javascripts/blog.js"></script>

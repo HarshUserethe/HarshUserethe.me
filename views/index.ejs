@@ -1,0 +1,368 @@
+<% include ./partials/header.ejs %>
+
+<!-- Skill overlay -->
+<div class="skill-overlay">
+  <div class="skill-sec">
+    <h3>My Skills</h3>
+    <div class="skill-close"><i class="ri-close-line"></i></div>
+    <div class="skill-icons">
+  <div class="zero">
+    <p >Front-end Development</p>
+    <div class="wrap">
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+     <div class="icards"></div>
+    </div>
+  </div>
+
+
+  
+    </div>
+  </div>
+</div>
+
+<div class="pop-over">
+  <div class="popup">
+    <i class="ri-checkbox-circle-line" id="popIcon" style="color: #fff;"></i>
+  <div class="popText">
+  <h1 style="font-weight: 600; color: #fff;">Form Submitted</h1>
+  <h1 style="font-weight: 600; color: rgb(255, 0, 106); margin-top: -2vh;">Successfully</h1>
+  <p style="font-size: 1.1vw; color: #ffffffd0;" id="msg">Thank You For Your Time. I'll Catch You Soon</p>
+  <button id="popButton">OK</button>
+  </div>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h2 style="color: #fff; margin-left: 4vw; font-size: 3vw;" id="diss" >Discuss Project</h2>
+    <p style="color: #ffffffbe; margin-left: 4vw; " id="ftf">Fill Below Form, And I'll Catch You Shortly</p>
+    <!-- Add more content here -->
+    <!-- contact form -->
+    <div class="discuss-form">
+      <form action="" method="post" id="formData" name="contact-form">
+       <div class="sepreter">
+        <label>Enter Your Full Name</label><br>
+        <input type="text" name="name" id="yourname" class="allinput" required><br>
+       </div>
+
+     <div class="sepreter">
+      <label>Enter Your Email</label><br>
+      <input type="email" name="email" id="youremail" class="allinput" required><br>
+     </div>
+
+    <div class="sepreter">
+        <label>Company Name (If Applicable)</label><br>
+        <input type="text" name="company" required><br>
+    </div>
+
+    <div class="sepreter">
+      <label>Enter Your Project Name</label><br>
+      <input type="text" name="project-name" id="yourprj" class="allinput"><br>
+    </div>
+
+    <div class="sepreter">
+      <label>Enter Project Description</label><br>
+        <textarea name="project-desc" id="textAreaPrj" maxlength="250" class="txt-area" cols="30" rows="10" placeholder="also mention project goals/objectives/target audience"></textarea><br>
+        <!-- <div class="count"><span id="charCount" style="color: #fff;">0</span><span> / 250</span></div> -->
+      </div>
+
+   <div class="sepreter">
+    <label >Enter Technical Requirements</label><br>
+    <textarea name="technical-requirements" class="txt-area" maxlength="250" required cols="30" rows="10" placeholder="Use ',' after every technology mentioned, e.g. React, NodeJS"></textarea><br>
+   </div>
+
+       <div class="sepreter">
+        <label for="dropdown">Design Preference?</label><br>
+        <select id="dropdown" name="design-prefrence"><br>
+            <option value="Simple Static Page" class="opt">Simple Static Page Design</option>
+            <option value="Modern No Animation" class="opt">Modern Page Design (No Animation)</option>
+            <option value="Modern Animation" class="opt">Modern Page Design (Animation)</option>
+        </select><br>
+       </div>
+        
+       <div class="sepreter">
+        <label for="">Additional Note/Comment</label><br>
+        <textarea name="note" class="txt-area" maxlength="250" cols="30" placeholder="Feel free to discuss additional" rows="10"></textarea><br>
+       </div>
+
+     
+       <div class="sepreter">
+       <div class="warning">
+        <span id="warn">Please fill out all required fields before submitting the form.</span>
+       </div>
+        <input type="submit", value="Submit" id="submit" disabled="disabled">
+       </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>
+      <div class="main">
+
+<!--Page-1 starts from here-->
+        <div id="page-1">
+          
+  
+          <div class="main-content">
+            <div class="text-area">
+              <h4 id="typewriter">
+                <span class="hi">Hello, I'am</span><br />
+                <span class="text"></span>
+                <span class="cursor">&#124;</span>
+              </h4>
+  
+              <div class="sub-text">
+                <p>
+                  Experienced web developer crafting seamless online experiences.
+                  Turning ideas into interactive realities with precision and
+                  passion.
+                </p>
+                <div class="btn">
+                  <a href="/images/Userethe_Harsh_Resume.pdf" download class="action-btn1"><button>Download CV</button></a>
+                  <a href="mailto:useretheharsh@gmail.com" class="action-btn2" id="contactBtn"
+                    ><button>Contact</button></a
+                  >
+                </div>
+
+                <div class="social-icons-new">
+                <a href="https://github.com/HarshUserethe/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harshuserethe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.behance.net/harshuserethe" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+                </div>
+              </div>
+              <div class="scroll-icon">
+                <i class="ri-mouse-line"></i>
+              </div>
+            </div>
+  
+            <div class="my-photo">
+              <img src="/images/My-pic/Harsh-removebg.png" alt="">
+              <div class="blob">
+                  
+                  <svg id="blobedit" viewBox="10 15 210 210" xmlns="http://www.w3.org/2000/svg">
+                      <path id="blobpath" fill="#FF0066" d="M61.5,-56.2C77.6,-45.4,87.2,-22.7,83.9,-3.3C80.6,16.1,64.4,32.2,48.3,45.8C32.2,59.5,16.1,70.6,0.4,70.2C-15.3,69.8,-30.6,57.9,-42,44.2C-53.4,30.6,-61,15.3,-62.6,-1.6C-64.3,-18.6,-60,-37.2,-48.6,-48C-37.2,-58.8,-18.6,-61.9,2.1,-64C22.7,-66,45.4,-67,61.5,-56.2Z" transform="translate(100 100)" />
+                  </svg>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+<!--Page-2 starts from here-->
+<div id="about-page"></div>
+        <div id="page-2">
+        <div class="skill-txt">
+          <h5>MY SKILLS</h5>
+          <h3>I excel in my field, and I have a deep passion for what I do.</h3>
+          <p>Explore My Skills: A versatile blend of creative design, coding proficiency, and effective communication. Discover how I bring ideas to life.</p>
+        </div>
+
+        <div class="skill-chart">
+<!-- skill-1 -->
+          <!-- <div class="wrapper">
+            <div class="skill-name">
+              <h5 id="name">Front-end Development</h5>
+              <h5 id="percent">80%</h5>
+            </div>
+            <div class="bar">
+              <div class="inner-bar"></div>
+            </div>
+          </div> -->
+        <span id="more" class="openMore">More...</span>
+        </div>
+        </div>
+
+        <!--Adding Extra Space-->
+        <div id="extra-space"></div>
+
+<!--Page-3 starts from here-->
+
+       <div id="page-3">
+        <div class="heading">
+          <h4>See My Latest Work</h4>
+          <p>Explore my Full Stack web projects, showcasing my creativity and technical expertise. From front-end design to back-end functionality, witness my journey in crafting innovative web solutions</p>
+        </div>
+        <div class="prj-cards">
+
+          <!-- <div class="card">
+            <div class="frame"></div>
+            <div class="about-project"></div>
+          </div> -->
+          
+         
+        </div>
+       </div>
+
+        <!--Adding Extra Space-->
+        <div id="extra-space"></div>
+
+        <!--Page-3 starts from here-->
+
+        <div id="page-4">
+          <div class="heading">
+            <h4>Certificates & Achievements</h4>
+            <p>Discover my credentials and accomplishments, a testament to my dedication and expertise in the field.</p>
+          </div>
+    
+          <div class="certify">
+            <!-- <div class="display">
+              <i class="ri-arrow-left-circle-line"></i>
+              <p>Swipe Left</p>
+            </div>
+           
+            <div class="swiper mySwiper2 mainSwiper">
+             
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/Untitled design/C1.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C2.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C3.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C4.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C5.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C6.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C7.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C8.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/Untitled design/C9.png" alt=""></div>
+              </div>
+            </div> -->
+
+            <!-- <div class="certificate-card">
+               <div class="jump-card">
+                <img src="" alt="">
+               </div>
+              <div class="certificate-icon"><img src="/images/1217101_flipkart_icon.svg" alt=""></div>
+              <div class="certificate-title">Flipkart Grid 5.0</div>
+              <div class="certificate-desc">Participation certificate of flipkart GRID 5.0</div>
+              <div class="certificate-year">Aug-2023</div>
+            </div> -->
+        
+
+            
+
+          </div>
+
+          <!-- <div class="pos">
+            <img src="/images/icons8-advance-100.png" alt="">
+          </div> -->
+        </div>
+
+        
+      <!--Adding Extra Space-->
+      <div id="extra-space"></div>
+  
+
+       <div id="Blog-Section">
+        <div class="heading">
+          <h4>Recent Blog</h4>
+          <p>"Dive into the realm of cutting-edge tech with my blogs. Stay up-to-date with the latest reviews, tech updates, and personal experiences that ignite my passion for innovation. Explore the ever-evolving world of technology through my eyes and discover how it's shaping our future</p>
+        </div>
+
+        <div class="content-area">
+          <!-- Blog-1 -->
+         <a href="/blog-post-1">
+          <div class="cardx" id="blogOne">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" alt="">
+            </div>
+            <div class="category"> BLOG </div>
+            <div class="headingx"> Blockchain: A Revolution Unveiled- Pros, Cons, and Future Impact...
+                <div class="author"> By <span class="name">Harsh</span> 20 Sep 2023</div>
+            </div>
+        </div>
+         </a>
+          
+         <!-- Blog-2 -->
+        <a href="/blog-post-2">
+          <div class="cardx" id="blogTwo">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt="">
+            </div>
+            <div class="category"> BLOG </div>
+            <div class="headingx"> Build Projects Like A Pro- Complete Roadmap Explained...
+                <div class="author"> By <span class="name">Harsh</span> 23 Sep 2023</div>
+            </div>
+        </div>
+        </a>
+          
+        <!-- Blog-3 -->
+        <a href="/blog-post-3">
+          <div class="cardx" id="blogThree">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+            </div>
+            <div class="category"> BLOG </div>
+            <div class="headingx"> Artificial Inteligence: Will AI Replace Web Developers? in 2024...
+                <div class="author"> By <span class="name">Harsh</span> 3 Oct 2023</div>
+            </div>
+        </div>
+        </a>
+     
+        </div>
+        
+        <div class="desc">
+          <img src="/images/icons8-forward-24.png" alt="">
+        </div>
+       </div>
+
+
+       <!--Adding Extra Space-->
+       <div id="extra-space"></div>
+
+
+       <div id="page-5">
+       
+       
+
+        <div class="mainText">
+          <h2>LET'S TALK <br> ABOUT THE NEXT <br> BIG THING</h2>
+        </div>
+        <!-- <div class="arrow-logo">
+          <img src="/images/icons8-advance-100.png" alt="">
+        </div> -->
+        <div class="mainButtons">
+          <button id="btn-1">Write a Message</button>
+          <button id="openModalBtn">Discuss Project</button>
+        </div>
+
+        <div class="all-social">
+
+          <div class="socialIcon">
+            <a href="https://www.linkedin.com/in/harshuserethe/"><div class="socialName"><h4 class="ss">LinkedIn</h4> <p>@HarshUserethe</p></div></a>
+            <div class="socialLogo"><i class="ri-linkedin-box-fill"></i></div>
+          </div>
+
+          <div class="socialIcon">
+           <a href="https://github.com/HarshUserethe/"> <div class="socialName"><h4 class="ss">GitHub</h4> <p>@harshuserethe</p></div></a>
+            <div class="socialLogo"><i class="ri-github-fill"></i></div>
+          </div>
+
+          <div class="socialIcon">
+            <a href="https://www.behance.net/harshuserethe"><div class="socialName"><h4 class="ss">Behance</h4> <p>@harshuserethe</p></div></a>
+            <div class="socialLogo"><i class="ri-behance-fill"></i></div>
+          </div>
+
+          <div class="socialIcon">
+           <a href="#" onclick="clickAlert()"> <div class="socialName"><h4 class="ss">YouTube</h4> <p>@HarshUserethe</p></div></a>
+            <div class="socialLogo"><i class="ri-youtube-fill"></i></div>
+          </div>
+         
+        </div>
+       </div>
+
+      </div>
+
+      <% include ./partials/bottom.ejs %>
+      <script src="/javascripts/blog.js"></script>
+      
+
+
+  
+
+  
