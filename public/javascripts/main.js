@@ -1,9 +1,9 @@
 
 
-var skills = [{skillName: "Front-end Development", proficiency: "80%", rate: 80},
-             {skillName: "Back-end Development", proficiency: "78%", rate: 78},
-             {skillName: "Graphic Desgin", proficiency: "60%", rate: 68},
-             {skillName: "Data Structure & Algo", proficiency: "30%", rate: 30},
+var skills = [{skillName: "Front-end Development", proficiency: "88%", rate: 80},
+             {skillName: "Back-end Development", proficiency: "85%", rate: 78},
+             {skillName: "Graphic Desgin", proficiency: "70%", rate: 68},
+             {skillName: "Data Structure & Algo", proficiency: "40%", rate: 30},
             ]
 
 
@@ -11,7 +11,7 @@ var projects = [{pname: "Full Stack - Amazon Clone Web App", img:"/images/P1.png
                 {pname: "Full Stack - Spotify Music Streaming", img:"/images/P2.png", url:"https://spotifyclone-3s1m.onrender.com/"},
                 {pname: "Live Weather Forecasting WebApp ", img:"/images/P3.png", url:"https://harshuserethe.github.io/Weather-Forecast-WebApp/"},
                 {pname: "Farm Rental Farmer's Website", img:"/images/P4.png", url:"https://harshuserethe.github.io/Farm-Rental-Website/"},
-                {pname: "Animated Award Winning Website", img:"/images/P5.png", url:"https://www.behance.net/gallery/167749685/Sell-or-Create-Your-NFT-UI-Design-NFT-Landing-Page"},
+                {pname: "Media Magnet - Video Downloader", img:"/images/P5.png", url:"https://media-magnet-three.vercel.app/"},
                 {pname: "BARREL - Mens Fashion Web design", img:"/images/P6.png", url:"https://harshuserethe.github.io/BARREL-MensFashion/"},
                 {pname: "Instagram Web Clone (Front-end)", img:"/images/P7.png", url:"https://harshuserethe.github.io/instagram-clone/"},
                 {pname: "RocketAir Awwwards Website Clone", img:"/images/P8.png", url:"https://harshuserethe.github.io/RocketAir-Clone/"},
