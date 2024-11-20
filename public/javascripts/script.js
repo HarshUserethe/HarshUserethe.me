@@ -1,5 +1,5 @@
 
-let words = ["Harsh Userethe", "Front-end Developer", "Back-end Developer"];
+let words = ["Harsh Userethe", "A Front-end Developer", "A Back-end Developer"];
 let names = ["Front", "Back", "Harsh", "Graphics"];
 
 gsap.to(".scroll-icon", {
